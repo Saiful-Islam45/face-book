@@ -1,27 +1,36 @@
 .every-friend{
     text-align: center;
-    background-color: #fff;  
-    box-shadow: 5px 5px 10px lightgray;
+    border: 1px solid gray;
     line-height: 10px;
     border-radius: 5px; 
     overflow: hidden;
-    padding:5px;
+    padding:5px; 
+    margin: 5px;
 }
 .img-class{
     float: left;
+    margin-right: 50px;
+    justify-self: start;
 }
 .img-class img{
     width: 250px;
     height: 250px;
-
-
+    border-radius: 10px;
 }
 .profile-class{
+    text-align: justify;
+    
 }
-.submit-btn{
+.pay-btn,.paid{
     background-color: #4267B2;
     color: white;
-    font-weight: 800;
-    padding: 10px;
+    font-weight: 700;
+    padding: 10px 20px;
     border-radius: 10px;
+    cursor: pointer;
+}
+
+.paid{
+    background-color: gray;
+    cursor: default;
 }

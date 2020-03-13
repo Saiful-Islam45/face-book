@@ -1,0 +1,36 @@
+.summary-paid{
+    display: flexbox;
+    border: 1px solid gray;
+    border-radius: 5px;
+    margin-top: 5px;
+    height: 4000px;
+    margin-right: 25px;
+    text-align: justify;
+    padding-left: 10px;
+    font-weight: 600;
+}
+.paid-members{
+    float: left;
+    width: 50%;
+    border: 1px solid white;
+    min-height: 500px;
+    text-decoration: none;
+    
+}
+.paid-members ul li{
+    display: flex;
+    padding-top: 10px;
+}
+.paid-members img{
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
+    padding-right: 10px;
+}
+.paid-members h3{
+    
+}
+.summary-class{
+    border: 1px solid white;
+    
+}

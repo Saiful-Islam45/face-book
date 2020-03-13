@@ -5,7 +5,7 @@ import Friend from './component/Friends/Friend';
 
 function App() {
   return (
-    <div>
+    <div className="app">
       <Header></Header>
       <Friend></Friend>
 

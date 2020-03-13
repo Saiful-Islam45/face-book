@@ -12,15 +12,19 @@ const Friend = () => {
         setSummary(addSummary);
     }
     return (
-        <div className="body-container">
-            <div className="friend-container">
-                {
-                    users.map(user => <FriendList addToSummary={addToSummary} user={user}></FriendList>)
-                }
+        <div>
+            <div className="body-container">
+                <div className="friend-container">
+                    {
+                        users.map(user => <FriendList addToSummary={addToSummary} user={user}></FriendList>)
+                    }
+                </div>
+                <div className="summary-container">
+                    <Summary summary={summary}></Summary>
+                </div>
+
             </div>
-            <div className="summary-container">
-                <Summary summary={summary}></Summary>
-            </div>
+            <p><small>All Rights Reserved by- Friends Fair Society</small></p>
         </div>
     );
 };

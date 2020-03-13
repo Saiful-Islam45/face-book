@@ -1,10 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './FriendList.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCoffee, faUserPlus } from '@fortawesome/free-solid-svg-icons'
+import { faCheckCircle, faDonate } from '@fortawesome/free-solid-svg-icons'
 const FriendList = (props) => {
     const { name, email, salary, img } = props.user;
+    const [isPaid, setIsPaid] = useState(false);
+    let paymentButton = <button onClick={() => { props.addToSummary(props.user); setIsPaid(true) }} className="pay-btn"><FontAwesomeIcon icon={faDonate} />  Add Fund</button>
+        ;
+    if (isPaid) {
+        paymentButton = <button className="paid" disabled><FontAwesomeIcon icon={faCheckCircle} /> Paid</button>;
+    }
     return (
+
         <div className="every-friend">
             <div className="img-class">
                 <img src={img} alt="" />
@@ -12,9 +19,13 @@ const FriendList = (props) => {
             <div className="profile-class">
 
                 <h3>{name}</h3>
-                <p>{email}</p>
-                <p><small>Salary: {salary}</small></p>
-                <button onClick={() => props.addToSummary(props.user)} className="submit-btn"><FontAwesomeIcon icon={faUserPlus} /> Add Friend</button>
+                <p><b>Email: </b>{email}</p>
+                <p><b>Salary: </b>${salary}</p>
+
+
+                {paymentButton}
+
+
             </div>
         </div>
     );
