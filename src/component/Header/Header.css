@@ -1,0 +1,33 @@
+.icon-design{
+    height: 80px;
+    color: rgb(13, 150, 204);
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 10px;
+    width:600px;
+    margin: auto;
+    padding-top: 25px;
+    margin-bottom: 20px;
+    font-size: 50px;
+}
+
+
+.header{
+    text-align: center;
+    padding-top: 50px;
+}
+nav{
+    line-height: 40px;
+    background-color: rgb(9, 72, 97);
+    font-size: 20px;
+
+}
+nav a{
+    text-decoration: none;
+    color: white;
+    margin-right: 20px;
+    padding:5px;
+}
+nav a:hover{
+    background-color: rgb(13, 150, 204);
+
+}

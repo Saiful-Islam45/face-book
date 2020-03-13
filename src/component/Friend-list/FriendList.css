@@ -1,0 +1,27 @@
+.every-friend{
+    text-align: center;
+    background-color: #fff;  
+    box-shadow: 5px 5px 10px lightgray;
+    line-height: 10px;
+    border-radius: 5px; 
+    overflow: hidden;
+    padding:5px;
+}
+.img-class{
+    float: left;
+}
+.img-class img{
+    width: 250px;
+    height: 250px;
+
+
+}
+.profile-class{
+}
+.submit-btn{
+    background-color: #4267B2;
+    color: white;
+    font-weight: 800;
+    padding: 10px;
+    border-radius: 10px;
+}
